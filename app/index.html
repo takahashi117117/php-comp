@@ -8,13 +8,25 @@
         <script src="./script.js"></script>
     </head>
     <body>
-        <style>
-            .button {
-                background: #aaa;
-            }
-        </style>
 
         <h1 class="logo">HELLO WORLD</h1>
+        <div id="wrap">
+        <ul class="nav">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
+        <ul class="nav02">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
+        </div>
+        <ul class="nav02">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
         <button>ボタン</button>
 
         <script>
@@ -24,11 +36,35 @@
                 });
             });*/
 
-            $(function(){
-                $("h1").on("click mouseenter", function(){
+            /*$(function(){
+                $("button").on("click", function(){
                     document.write("クリックされました");
                 });
-            });
+            });*/
+
+            //h1をクリックすると、clickedというclassが付与され、クリックすると、clickedが外れる
+            /*$(function(){
+                $("h1").click(function(){
+                    if($(this).hasClass("clicked")){
+                        $(this).removeClass("clicked");
+                    }else {
+                        $(this).addClass("clicked");
+                    }
+                });
+            });*/
+
+            ////buttonをクリックすると、clickedというclassが付与され、クリックすると、clickedが外れる
+            /*$(function(){
+                $("button").click(function(){
+                    $(this).toggleClass("logo");
+                });
+            });*/
+
+            /*$(function(){
+                $("button").click(function(){
+                    $("#wrap").children("li").css("color","red");
+                });
+            });*/
         </script>
     </body>
 </html>
