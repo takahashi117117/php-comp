@@ -8,6 +8,27 @@
         <script src="./script.js"></script>
     </head>
     <body>
+        <style>
+            .button {
+                background: #aaa;
+            }
+        </style>
 
+        <h1 class="logo">HELLO WORLD</h1>
+        <button>ボタン</button>
+
+        <script>
+            /*$(function (){
+                $("button").click(function(){
+                    $("h1").text("クリック！！！");
+                });
+            });*/
+
+            $(function(){
+                $("h1").on("click mouseenter", function(){
+                    document.write("クリックされました");
+                });
+            });
+        </script>
     </body>
 </html>
