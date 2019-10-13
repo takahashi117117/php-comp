@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="./confirm.php" method="POST">
-  <label for="">お名前</label>
+  <label for="">名前</label>
   <input type="text" name="name"><br>
   <label for="">年齢</label>
   <input type="text" name="age"><br>
