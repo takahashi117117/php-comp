@@ -9,5 +9,19 @@
     <script src="./script.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      let result = 0; //変数resultに0を代入する
+
+      function add(num) {
+        return ++num;
+      } //関数addに+1をインクリメントする
+
+      for (let i = 1; i < 5; i++) {
+        result += add(i);
+      }
+
+      document.write(result);
+    </script>
+  </body>
 </html>
